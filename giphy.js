@@ -1,11 +1,13 @@
 const api = '4hLxRWpsWJ7ksJHmkTiTfuhGXqWWA6BQ';
 const trendingURL = `https://api.giphy.com/v1/gifs/trending?api_key=${api}&limit=25&rating=G`;
+const translateURL = `https://api.giphy.com/v1/gifs/translate?api_key=${api}&s=`
 
 document.addEventListener('DOMContentLoaded', init);
 function init() {
+    // Search feature
     document.getElementById('btnSearch').addEventListener('click', event => {
         event.preventDefault();
-        let url = `https://api.giphy.com/v1/gifs/search?api_key=${api}&limit=1&q=20`;
+        let url = `https://api.giphy.com/v1/gifs/search?api_key=${api}&limit=1&q=`;
         let str = document.getElementById('search').value.trim();
         url = url.concat(str);
 
@@ -31,23 +33,24 @@ function init() {
             });
     });
 
-    // Get trending giphy data
+    // Get trending giphy's
     fetch(trendingURL)
         .then(response => {
             return response.json();
         })
         .then(data => {
-            for(let i = 0; i < data.data.length; i++) {
+            for(let i = 0; i < data.data.length - 21; i++) {
                 let fig = document.createElement("figure");
                 let img = document.createElement("img");
                 img.src = data.data[i].images.downsized.url;
                 img.alt = data.data[i].title;
                 fig.appendChild(img)
-                let trending_giphs  = document.querySelector('.trending_giphs');
-                trending_giphs.insertAdjacentElement("afterbegin", fig);
+                let wrap  = document.querySelector('.wrap');
+                wrap.insertAdjacentElement("afterbegin", fig);
             }
         });
-            
+    
+    // 
 }
 
 
