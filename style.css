@@ -1,0 +1,202 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  background: #121212;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+nav {
+  width: 100%;
+  padding: 20px 0;
+}
+
+nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .container .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .container .logo img {
+  width: 35px;
+}
+
+nav .container .logo .giphy-text-logo {
+  margin: 0 10px 0 0;
+}
+
+nav .container .logo .giphy-text-logo h1 {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+nav .container .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .container .nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .container .nav ul li {
+  padding: 10px 12px;
+}
+
+nav .container .nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 0 0 6px 0;
+  font-size: .95em;
+}
+
+nav .container .nav .upload-create ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .container .nav .upload-create ul li {
+  background: #665cff;
+  margin: 0 4px 0 0;
+  height: 35px;
+}
+
+nav .container .nav .upload-create ul li a {
+  padding: 0px 7px;
+  border: none;
+}
+
+nav .container .nav .account {
+  width: 170px;
+  margin: 0 0 0 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  position: relative;
+  background: #3e3e3e;
+}
+
+nav .container .nav .account img {
+  height: 38px;
+  width: 38px;
+  background: #fc6666;
+  position: absolute;
+  left: 0;
+}
+
+nav .container .nav .account span {
+  margin: 0 0 0 20px;
+  font-size: .95rem;
+}
+
+nav .container .nav .account i {
+  position: absolute;
+  right: 14px;
+}
+
+.search {
+  width: 100%;
+}
+
+.search .container form {
+  width: 100%;
+  position: relative;
+}
+
+.search .container form input {
+  width: 100%;
+  padding: 16px 0;
+  border: 1px solid white;
+  font-size: 1rem;
+}
+
+.search .container form button {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  padding: 0 13px;
+  cursor: pointer;
+  background: #d14eb0;
+  border: none;
+  color: white;
+}
+
+.search .container .out {
+  padding: 20px 0;
+}
+
+.search .container .out figcaption {
+  color: white;
+  margin: 10px 0 0 0;
+}
+
+.trending {
+  width: 100%;
+}
+
+.trending .container span {
+  color: gray;
+  margin: 0 10px 0 0;
+}
+
+.trending .container .trending_giphs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.trending .container .trending_giphs figure {
+  width: 100%;
+  max-width: 262.5px;
+}
+
+.trending .container .trending_giphs figure img {
+  width: 100%;
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
